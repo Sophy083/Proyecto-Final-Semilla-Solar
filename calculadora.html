@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semilla Solar</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Semilla Solar☀️</h1>
+    </header>
+
+    <nav class="navbar ">
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="diagnostico.html">Diagnóstico</a></li>
+            <li><a href="propuesta.html">Propuesta energética</a></li>
+            <li><a href="conclusion.html">Conclusión</a></li>
+            <li class="color"><a href="calculadora.html">calculadora</a></li>
+            <li><a href="referencias.html">referencias</a></li>
+        </ul>
+    </nav>
+
+    <section id="calculadora">
+        <p>Ingresa tu consumo mensual de energía (en kWh):</p>
+        <input id="consumo" type="number" placeholder="Ej. 500" />
+        <button onclick="calcularPaneles()">Calcular</button>
+
+        <div id="resultado">
+            <p><strong>Paneles necesarios:</strong> <span id="paneles"></span></p>
+            <p><strong>Producción total estimada:</strong> <span id="produccion"></span> kWh/mes</p>
+            <p><strong>Cobertura estimada:</strong> <span id="cobertura"></span>% del consumo</p>
+        </div>
+    </section>
+
+    
+    <footer class="footer"><h3>Gracias por ver nuestra pag</h3></footer>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+/* PARA TODAS LAS PAGINAS EN GENERAL */
+/* diseño del body */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: #F1F8F4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+
+/* diseño del header */
+.header {
+    font-size: 30px;
+    background-color: #5C8D7B;
+    color: white;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+/* Diseño del titolo principal */
+.header h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Diseño del menu de navegacion */
+.navbar {
+    display: flex;
+    background-color: #BDDAC9;
+    padding: 10px;
+    position: sticky;   
+    top: 0;
+    justify-content: center;
+    z-index: 10;
+
+}
+
+/* Diseño del menu de navegacion */
+.navbar ul {    
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Diseño del menu de navegacion */
+.navbar ul li a{
+    color: #e2e2e2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Diseño del menu de navegacion */
+.navbar ul li {
+    background: #8B9F71;
+    border-radius: 0;
+    padding: 8px 0;
+    transition: background 0.3s, box-shadow 0.5s;
+    transition: color 0.3s;
+    cursor: pointer;
+    flex: 1 1 0;
+    text-align: center;
+}
+
+/* Hace que al poner el mause se ponga azul */
+.navbar ul li:hover {
+    background: #5C8D7B;
+}
+
+/* Hace que la letra del link cambien de color */
+.navbar ul li a:hover {
+    color: #333333;
+}
+
+/* Hace que cuando estoy en la pagina tenga un borde de color */
+.color {
+    box-shadow: 0 2px 8px #5C8D7B;
+}
+
+/* Diseño footer */
+.footer {
+    background-color: #5C8D7B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;   
+}
+
+/* PAGINA DE INICIO */
+/* Separacion de las columnas de inicio*/
+.main_inicio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "itemi1 itemi2 itemi2"
+        "itemi3 itemi3 itemi3";
+    grid-auto-rows: min-content;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Asiganacion de las zonas */
+.item_i:nth-child(1) { grid-area: itemi1;}
+.item_i:nth-child(2) { grid-area: itemi2;}
+.item_i:nth-child(3) { grid-area: itemi3;}
+
+/* Diseño del las secciones del inicio */
+.item_i {
+    background-color: #FAFAF9;
+    border: 1px solid #DADADA;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: #3E3E3E;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 20px;
+    
+}
+
+/* Decoracion para los h2 de inicio */
+.item_i h2 {
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* diseño p de los item_i */
+.item_i p {
+    padding: 10px;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Decoracion de la zona donde van a ver imagenes */
+#item_img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    margin: 20px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* DISEÑO DE LA PAGINA DEL DIAGNOSTICO */
+/* Separacion de las columnas */
+.main_diagnostico {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas:
+        "itemd1 itemd1 itemd1"
+        "itemd2 itemd3 itemd3"
+        "itemd4 itemd4 itemd5"
+        "itemd6 itemd7 itemd7"
+        "itemd8 itemd8 itemd8";
+    grid-auto-rows: min-content;
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Asignacion de las columnas */
+.item_d:nth-child(1) {grid-area: itemd1;}
+.item_d:nth-child(2) {grid-area: itemd2;}
+.item_d:nth-child(3) {grid-area: itemd3;}
+.item_d:nth-child(4) {grid-area: itemd4;}
+.item_d:nth-child(5) {grid-area: itemd5;}
+.item_d:nth-child(6) {grid-area: itemd6;}
+.item_d:nth-child(7) {grid-area: itemd7;}
+.item_d:nth-child(8) {grid-area: itemd8;}
+
+/* diseño de titulo principal */
+#titulo_diag {
+    font-size: 50px;
+    gap: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Ajustes de la pagina de diagnostico */
+.div_diagnostico{
+    padding: 20px;
+    margin: 10px;
+
+}
+
+/* Diseño de item_d */
+.item_d {
+    background-color: #FAFAF9;
+    border: 1px solid #DADADA;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: #3E3E3E;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+/* diseño h2 de item_d */
+.item_d h2 {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* diseño p de item_d */
+.item_d p {
+    padding: 10px;
+    margin: 0;
+    text-align: justify;
+}
+
+/* DISEÑO DE LA PAGINA DE LA PROPUESTA */
+/* Separacion de las columnas */
+.main_propuesta {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas:
+        "itemp1 itemp2 itemp2"
+        "itemp3 itemp3 itemp3"
+        "itemp4 itemp4 itemp4"
+        "itemp5 itemp5 itemp5"
+        "itemp6 itemp6 itemp6";
+    grid-auto-rows: min-content;
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Asignacion de las columnas */
+.item_p:nth-child(1) {grid-area: itemp1;}
+.item_p:nth-child(2) {grid-area: itemp2;}
+.item_p:nth-child(3) {grid-area: itemp3;}
+.item_p:nth-child(4) {grid-area: itemp4;}
+.item_p:nth-child(5) {grid-area: itemp5;}
+.item_p:nth-child(6) {grid-area: itemp6;}
+
+/* diseño de titulo principal */
+#titulo_prop {
+    font-size: 50px;
+    gap: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Ajustes de la pagina de diagnostico */
+.div_propuesta {
+    padding: 20px;
+    margin: 10px;
+
+}
+
+/* Diseño de item_d */
+.item_p {
+    background-color: #FAFAF9;
+    border: 1px solid #DADADA;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: #3E3E3E;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+/* diseño h2 de item_d */
+.item_p h2 {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* diseño p de item_d */
+.item_p p {
+    padding: 10px;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Diseño viñetas del presupuesto */
+.item_p ul {
+    list-style-type: disc;;
+    font-size: 20px;
+}
+
+.item_p ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.item_p ul li::marker {
+    color: #266952;
+}
+
+/* DISEÑO DE LA PAGINA CONCLUSIÓN */
+/* diseño de titulo principal */
+#titulo_co {
+    font-size: 50px;
+    gap: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Diseño del las secciones del conclusion*/
+.item_co {
+    background-color: #FAFAF9;
+    border: 1px solid #DADADA;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: #3E3E3E;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+/* Diseño de la pagina */
+.div_conclusion {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* diseño p de item_co */
+.item_co p {
+    padding: 10px;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Diseño de la seccion de conclucion */
+.item_co {
+    background-color: #FAFAF9;
+    border: 1px solid #DADADA;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: #3E3E3E;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+
+/* DISEÑO DE LA PAGINA LA REFERENCIA*/
+/* diseño de titulo principal */
+#titulo_ref {
+    font-size: 50px;
+    gap: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Diseño del las secciones de la referencia*/
+.item_r {
+    background-color: #FAFAF9;
+    border: 1px solid #DADADA;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: #3E3E3E;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+/* Ajustes de la pagina de la referencias */
+.div_referencia {
+    padding: 0;
+    margin: 0;
+}
+
+/* diseño h2 de item_r */
+.item_r h2 {
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* diseño p de item_r */
+.item_r p {
+    padding: 10px;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Diseño de la seccion de la referecia */
+.item_r {
+    background-color: #FAFAF9;
+    border: 1px solid #DADADA;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: #3E3E3E;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+/* DISEÑO DE LA PAGINA LA CALCULADORA*/
+#calculadora {
+  background-color: #fef9c3;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+#calculadora h2 {
+  font-size: 1.8rem;
+  color: #92400e;
+  margin-bottom: 0.5rem;
+}
+
+#calculadora input {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#calculadora button {
+  background-color: #ca8a04;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#calculadora button:hover {
+  background-color: #b45309;
+}
+
+#resultado {
+  display: none;
+  margin-top: 1rem;
+  background: white;
+  padding: 1rem;
+  border-left: 5px solid #facc15;
+  border-radius: 8px;
+}
+
+
