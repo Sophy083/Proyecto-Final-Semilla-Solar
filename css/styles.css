@@ -140,11 +140,28 @@ body {
 }
 
 /* Decoracion de la zona donde van a ver imagenes */
-#item_img img {
+#transicioncolombia {
     width: 300px;
-    height: 300px;
-    border-radius: 200px;
+    height: 210px;
     margin: 20px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#probre_solar {
+    width: 500px;
+    height: 300px;
+    border-radius: 60px;
+    margin: 20px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#laloma {
+    width: 1000px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 70px;
     object-fit: cover;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
