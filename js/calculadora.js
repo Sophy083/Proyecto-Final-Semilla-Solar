@@ -7,7 +7,7 @@ function calcularPaneles() {
     return;
   }
 
-  const produccionPorPanel = 50 * 30; // 50 kWh/mes por panel
+  const produccionPorPanel = 50; // 50 kWh/mes por panel
   const paneles = Math.ceil(consumo / produccionPorPanel);
   const produccionTotal = paneles * produccionPorPanel;
   const cobertura = Math.min((produccionTotal / consumo) * 100, 100).toFixed(1);

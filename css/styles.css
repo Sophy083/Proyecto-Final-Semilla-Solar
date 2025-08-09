@@ -167,74 +167,6 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* DISEÑO DE LA PAGINA DEL DIAGNOSTICO */
-/* Separacion de las columnas */
-.main_diagnostico {
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-areas:
-        "itemd1 itemd1 itemd1"
-        "itemd2 itemd3 itemd3"
-        "itemd4 itemd4 itemd5"
-        "itemd6 itemd7 itemd7"
-        "itemd8 itemd8 itemd8";
-    grid-auto-rows: min-content;
-    gap: 20px;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-}
-/* Asignacion de las columnas */
-.item_d:nth-child(1) {grid-area: itemd1;}
-.item_d:nth-child(2) {grid-area: itemd2;}
-.item_d:nth-child(3) {grid-area: itemd3;}
-.item_d:nth-child(4) {grid-area: itemd4;}
-.item_d:nth-child(5) {grid-area: itemd5;}
-.item_d:nth-child(6) {grid-area: itemd6;}
-.item_d:nth-child(7) {grid-area: itemd7;}
-.item_d:nth-child(8) {grid-area: itemd8;}
-
-/* diseño de titulo principal */
-#titulo_diag {
-    font-size: 50px;
-    gap: 20px;
-    text-align: center;
-    margin: 10px;
-}
-
-/* Ajustes de la pagina de diagnostico */
-.div_diagnostico{
-    padding: 20px;
-    margin: 10px;
-
-}
-
-/* Diseño de item_d */
-.item_d {
-    background-color: #FAFAF9;
-    border: 1px solid #DADADA;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    color: #3E3E3E;
-    padding: 20px;
-    margin: 10px;
-    gap: 10px;
-    border-radius: 20px;
-}
-
-/* diseño h2 de item_d */
-.item_d h2 {
-    font-size: 30px;
-    padding: 10px;
-    margin: 10px;
-}
-
-/* diseño p de item_d */
-.item_d p {
-    padding: 10px;
-    margin: 0;
-    text-align: justify;
-}
-
 /* DISEÑO DE LA PAGINA DE LA PROPUESTA */
 /* Separacion de las columnas */
 .main_propuesta {
@@ -468,4 +400,11 @@ body {
   border-radius: 8px;
 }
 
+/* Diseño la imagen de la tabla del propuesta */
+#tablapresupuesto {
+    width: 820px;
+    margin: 20px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
