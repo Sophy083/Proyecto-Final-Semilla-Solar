@@ -306,48 +306,11 @@ body {
     margin: 10px;
 }
 
-/* Diseño del las secciones de la referencia*/
-.item_r {
-    background-color: #FAFAF9;
-    border: 1px solid #DADADA;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    color: #3E3E3E;
-    padding: 20px;
-    margin: 10px;
-    gap: 10px;
-    border-radius: 20px;
-}
-
-/* Ajustes de la pagina de la referencias */
-.div_referencia {
-    padding: 0;
-    margin: 0;
-}
-
-/* diseño h2 de item_r */
-.item_r h2 {
-    font-size: 30px;
-    margin: 10px;
-    text-align: center;
-}
-
-/* diseño p de item_r */
-.item_r p {
+.main_referencia {
+    background-color: white;
     padding: 10px;
-    margin: 0;
-    text-align: justify;
-}
-
-/* Diseño de la seccion de la referecia */
-.item_r {
-    background-color: #FAFAF9;
-    border: 1px solid #DADADA;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    color: #3E3E3E;
-    padding: 20px;
-    margin: 10px;
-    gap: 10px;
-    border-radius: 20px;
+    margin: 20px;
+    border-radius: 30px;
 }
 
 /* DISEÑO DE LA PAGINA LA CALCULADORA*/

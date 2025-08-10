@@ -20,18 +20,18 @@
       <li><a href="referencias.html">Referencias</a></li>
     </ul>
   </nav>
+  
+    <section id="calculadora">
+      <label for="consumo">Ingresa tu consumo mensual de energía (en kWh):</label><br/>
+      <input id="consumo" type="number" placeholder="Ej. 500" />
+      <button onclick="calcularPaneles()">Calcular</button>
 
-  <section id="calculadora">
-    <label for="consumo">Ingresa tu consumo mensual de energía (en kWh):</label><br/>
-    <input id="consumo" type="number" placeholder="Ej. 500" />
-    <button onclick="calcularPaneles()">Calcular</button>
-
-    <div id="resultado" style="display:none; margin-top: 15px;">
-      <p><strong>Paneles necesarios:</strong> <span id="paneles"></span></p>
-      <p><strong>Producción total estimada:</strong> <span id="produccion"></span> kWh/mes</p>
-      <p><strong>Cobertura estimada:</strong> <span id="cobertura"></span>% del consumo</p>
-    </div>
-  </section>
+      <div id="resultado" style="display:none; margin-top: 15px;">
+        <p><strong>Paneles necesarios:</strong> <span id="paneles"></span></p>
+        <p><strong>Producción total estimada:</strong> <span id="produccion"></span> kWh/mes</p>
+        <p><strong>Cobertura estimada:</strong> <span id="cobertura"></span>% del consumo</p>
+      </div>
+    </section>
 
   <footer class="footer">
     <h3>Gracias por visitar nuestra página</h3>
