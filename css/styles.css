@@ -371,3 +371,98 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Diseño para pantalla mas pequeña */
+@media (max-width: 768px) {
+
+  /* Ajustes generales */
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .header {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+    padding: 5px;
+  }
+
+  /* Navbar vertical */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .navbar ul li {
+    flex: none;
+    width: 100%;
+  }
+
+  /* Página de inicio*/
+  .main_inicio {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "itemi1"
+      "itemi2"
+      "itemi3";
+  }
+
+  /* Página de propuesta*/
+  .main_propuesta {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "itemp1"
+      "itemp2"
+      "itemp3"
+      "itemp4"
+      "itemp5"
+      "itemp6";
+  }
+
+  /* Ajustar imágenes*/
+  #transicioncolombia,
+  #probre_solar,
+  #laloma,
+  #tablapresupuesto {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  /* Ajustes títulos */
+  #titulo_prop,
+  #titulo_co,
+  #titulo_ref {
+    font-size: 28px;
+    margin: 5px;
+  }
+
+  /* Página de conclusión*/
+  .item_co {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  /* Calculadora*/
+  #calculadora {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  #calculadora h2 {
+    font-size: 1.5rem;
+  }
+
+  #calculadora input {
+    max-width: 100%;
+    }
+}
